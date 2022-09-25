@@ -12,12 +12,6 @@ for i in range(case_count):
 
     if new_h == 0:
         new_h = H
-        new_w -= 1 
-        
-    str_h = str(new_h)
-    str_w = str(new_w)
-    
-    if len(str_w) < 2:
-        str_w = "0" + str_w
-    print(str_h + str_w)
+        new_w  = N // H
+    print(f"{new_h * 100 + new_w}")
     
