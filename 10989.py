@@ -22,7 +22,6 @@ def bubble_sort(num_list):
     
 
 # 퀵정렬 - 시간초과 
-
 def qsort(num_list):
     if len(num_list) <= 1:
         return num_list
@@ -33,8 +32,8 @@ def qsort(num_list):
     
     return qsort(left) + [pivot] + qsort(right)
         
+        
 # dict를 활용한 풀이  - 통과 
-
 n = int(sys.stdin.readline().rstrip())
 temp_dict = {}
 for i in range(n):
