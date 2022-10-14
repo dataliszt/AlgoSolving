@@ -14,11 +14,12 @@ for num in find_list:
     elif num in prime_list:
         curr_count += 1
     else:
-        cnt = 0
+        cnt = False
         for prime_num in prime_list:
             if num % prime_num == 0:
-                cnt += 1
-        if cnt == 0:
+                cnt = True
+                break 
+        if not cnt:
             curr_count += 1
             prime_list.append(num)
 print(curr_count)
